@@ -1,11 +1,5 @@
-
-  "name": "sport-applicatie-kimberly",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "serve": "npx @11ty/eleventy --serve",
-    "watch": "npx sass src/assets/styles/main.scss src/assets/styles/main.css --watch",
-    "start": "concurrently npm:serve npm:watch"
-  },
-
+{
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
