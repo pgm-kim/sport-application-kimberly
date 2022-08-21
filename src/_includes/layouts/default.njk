@@ -1,0 +1,20 @@
+{# layout - for example home (index), shopping bag and favorites #}
+
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    {% block header %}
+        <section>
+            {% include "components/header.njk" %}
+        </section>
+    {% endblock %}
+    {% block main %}
+        
+    {% endblock %}
+    {% block navbar %}
+        <section>
+            {% include "components/navbar.njk" %}
+        </section>
+    {% endblock %}
+{% endblock %}
+

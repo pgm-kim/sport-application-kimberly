@@ -1,0 +1,20 @@
+---
+title: places
+places: ['flat', 'ramp', 'slide', 'grab', 'grind']
+---
+
+{% block header %}
+
+        <section>
+            {% include "components/header--list.njk" %}
+        </section>
+        
+{% endblock %}
+
+{% block main %}
+
+    <button class="btn btn__secondary">
+        {% for item in level %}
+    </button>
+
+{% endblock %}

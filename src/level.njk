@@ -1,0 +1,16 @@
+---
+title: level
+level: ['beginner', 'intermediate', 'advanced', 'extreme']
+---
+
+{% block header %}
+        <section>
+            {% include "components/header--list.njk" %}
+        </section>
+{% endblock %}
+
+{% block main %}
+    <button class="btn btn__secondary">
+        {% for item in level %}
+    </button>
+{% endblock %}

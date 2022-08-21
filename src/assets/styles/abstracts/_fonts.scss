@@ -1,0 +1,69 @@
+//  Scss Imported fonts
+
+@font-face {
+    font-family:'Work Sans';
+    src: url('/dist/fonts/Work Sans Black.woff2') format('woff2'),
+		url('/dist/fonts/Work Sans Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Work Sans';
+    src: url('/dist/fonts/Work Sans Bold.woff2') format('woff2'),
+		url('/dist/fonts/Work Sans Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Work Sans';
+    src: url('/dist/fonts/Work Sans SemiBold.woff2') format('woff2'),
+		url('/dist/fonts/Work Sans SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Work Sans';
+    src: url('/dist/fonts/Work Sans Medium.woff2') format('woff2'),
+		url('/dist/fonts/Work Sans Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Work Sans';
+    src: url('/dist/fonts/Work Sans Regular.woff2') format('woff2'),
+		url('/dist/fonts/Work Sans Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Work Sans';
+    src: url('/dist/fonts/Work Sans Light.woff2') format('woff2'),
+		url('/dist/fonts/Work Sans Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'bely-display';
+    src: url('/dist/fonts/bely.woff2') format('woff2'),
+    url('/dist/fonts/bely.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

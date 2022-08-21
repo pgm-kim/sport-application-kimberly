@@ -1,0 +1,38 @@
+//  Scss Buttons
+
+.btn {
+    text-align: center;
+    width: 10rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 1rem;
+
+    &.btn__primary {
+        color: white;
+        background-color: $mustard;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    &.btn__primaryblue {
+        color: white;
+        background-color: $dark-blue;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    &.btn__secondary {
+        background-color: $background;
+        color: $dark-blue;
+        border: 0.5rem solid $dark-blue;
+
+        &:hover {
+            color: white;
+            background-color: $dark-blue;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+// / Typography Rules
+
+h1 {
+    font-family: 'bely-display', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: $forest;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+
+h2 {
+    font-family: 'bely-display', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: $dark-blue;
+    margin-top: 2rem;
+}
+
+
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+}

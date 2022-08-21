@@ -1,0 +1,36 @@
+//  Scss Navbar
+
+.navbar {
+    background-color: $dark-blue;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .actionbtn {
+        background-color: $mustard;
+        border-radius: 2rem;
+        margin-top: -4rem;
+        padding: 1rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            padding: 1rem .5rem;
+        }
+
+        a {
+            padding: 2rem 1rem 1rem 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    .navbar ul {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}

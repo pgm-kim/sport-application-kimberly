@@ -1,0 +1,83 @@
+//  Scss Header
+
+.header {
+    width: 80vw;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: black solid 1px;
+}
+
+.header__regular { 
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__filter {
+    border-bottom: white solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: 1rem auto;
+
+    .form__input {
+        background-color: $color-grey;
+        border: none;
+        border-bottom: 2px solid $color-blue;
+        padding: .5rem;
+        margin: .5rem 0 1.5rem 0;
+    }
+    
+    .form__label {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: $color-blue;
+        font-size: .85rem;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    .search-form {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    .search__label {
+        &:before {
+            content: none;
+        }
+    }
+}
+
+.avatar {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-image {
+    margin-bottom: 2rem;
+}
+
+.start-title {
+    padding: 12rem 0;
+    background-image: url("/dist/images/startscreen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    object-fit: cover;
+    width: 100%;
+    height: 10rem;
+}
