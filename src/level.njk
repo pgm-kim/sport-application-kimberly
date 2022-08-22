@@ -2,7 +2,7 @@
 title: level
 level: ['beginner', 'intermediate', 'advanced', 'extreme']
 ---
-
+<body class="background--darkblue">
 {% block header %}
         <section>
             {% include "components/header--list.njk" %}
@@ -14,3 +14,5 @@ level: ['beginner', 'intermediate', 'advanced', 'extreme']
         {% for item in level %}
     </button>
 {% endblock %}
+
+</body>

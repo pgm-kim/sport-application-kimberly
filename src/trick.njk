@@ -1,5 +1,8 @@
 ---
 title: tricks
+filter: ['level', 'place']
+level: level
+place: place
 ---
 
 
@@ -10,21 +13,28 @@ title: tricks
 <section>
 <div>
     <h2>succeed trick</h2>
+
 </div>
 <div>
     <h2>favorieten</h2>
 </div>
 </section>
 <section>
-    <button class="btn btn__secondary">
-        level
-    </button>
-    <button class="btn btn__secondary">
-        place
-    </button>
-    <button class="btn btn__primaryblue">
-        new trick
-    </button>
+    <a href="./build/level.hmtl">
+        <button class="btn btn__secondary">
+            {{ level }}
+        </button>
+    </a>
+    <a href="./build/places.hmtl">
+        <button class="btn btn__secondary">
+            {{ place }}
+        </button>
+    </a>
+    <a href="./build/places.hmtl">
+        <button class="btn btn__primaryblue">
+            new trick
+        </button>
+    </a>
 </section>
 
 {% endblock %}
