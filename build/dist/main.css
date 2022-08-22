@@ -137,6 +137,11 @@ p {
   color: black;
 }
 
+main {
+  width: 80vw;
+  margin: auto;
+}
+
 /*
 This file is used to contain all components imports.
 */
