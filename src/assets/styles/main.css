@@ -208,12 +208,13 @@ This file is used to contain all components imports.
   padding-bottom: 1rem;
   border-radius: 0.5rem;
   border: none;
-  margin-top: 2rem;
+  margin: 0.5rem;
 }
 .btn.btn__primary {
   color: white;
   background-color: #C69C21;
   border: 0.2rem solid #C69C21;
+  margin-top: 2rem;
 }
 .btn.btn__primary:hover {
   opacity: 0.8;
@@ -222,6 +223,7 @@ This file is used to contain all components imports.
   color: white;
   background-color: #5473D6;
   border: 0.2rem solid #5473D6;
+  margin-top: 3rem;
 }
 .btn.btn__primaryblue:hover {
   opacity: 0.8;
@@ -246,6 +248,10 @@ This file is used to contain all components imports.
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+}
+
+.trickfilter {
+  padding-top: 2rem;
 }
 
 .login {
