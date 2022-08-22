@@ -7,12 +7,12 @@
     padding-bottom: 1rem;
     border-radius: 0.5rem;
     border: none;
-    margin-top: 2rem;
 
     &.btn__primary {
         color: white;
         background-color: $mustard;
         border: 0.2rem solid $mustard;
+        margin-top: 3rem;
 
         &:hover {
             opacity: 0.8;
@@ -23,6 +23,7 @@
         color: white;
         background-color: $dark-blue;
         border: 0.2rem solid $dark-blue;
+        margin-top: 3rem;
 
         &:hover {
             opacity: 0.8;

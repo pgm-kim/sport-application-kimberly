@@ -6,6 +6,7 @@ places: ['flat', 'ramp', 'slide', 'grab', 'grind']
 level: ['beginner', 'intermediate', 'advanced', 'extreme']
 ---
 
+
 {% extends "layouts/default.njk" %}
 
 {% block main %}
@@ -29,12 +30,21 @@ level: ['beginner', 'intermediate', 'advanced', 'extreme']
 </section>
 
 
-{# skate video #}
+<video src="./src/assets/images/ca7fda0d0b927c312e2b0db6c51a4057.mp4"></video>
 
 <section>
 <h2>stappen</h2>
 <ul>
-    {% include "components/stap.njk" %}
+    {# {% include "components/stap.njk" %} #}
+    <div>
+
+{% for item in nummer %}
+
+           {{ item }}
+
+{% endfor %}
+
+</div>
 </ul>
 </section>
 <a href="./built/video/index.html">

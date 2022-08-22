@@ -14,7 +14,10 @@ level: ['beginner', 'intermediate', 'advanced', 'extreme']
 
 {% block main %}
     <button class="btn btn__secondary">
+        {% for item in level %}
+        {{ item }}
     </button>
+    {% endfor %}
 {% endblock %}
 
 </body>

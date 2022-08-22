@@ -15,6 +15,10 @@ places: ['flat', 'ramp', 'slide', 'grab', 'grind']
 {% block main %}
 
     <button class="btn btn__secondary">
+
+        {% for item in places %}
+        {{ item }}
+        
     </button>
 
 {% endblock %}
