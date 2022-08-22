@@ -137,9 +137,8 @@ p {
   color: black;
 }
 
-main {
-  width: 80vw;
-  margin: auto;
+.background--darkblue {
+  background-color: #5473D6;
 }
 
 /*
@@ -204,14 +203,17 @@ This file is used to contain all components imports.
 }
 .btn {
   text-align: center;
-  width: 10rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 1rem;
+  width: 14rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 2rem;
 }
 .btn.btn__primary {
   color: white;
   background-color: #C69C21;
+  border: 0.2rem solid #C69C21;
 }
 .btn.btn__primary:hover {
   opacity: 0.8;
@@ -219,6 +221,7 @@ This file is used to contain all components imports.
 .btn.btn__primaryblue {
   color: white;
   background-color: #5473D6;
+  border: 0.2rem solid #5473D6;
 }
 .btn.btn__primaryblue:hover {
   opacity: 0.8;
@@ -226,7 +229,7 @@ This file is used to contain all components imports.
 .btn.btn__secondary {
   background-color: white;
   color: #5473D6;
-  border: 0.5rem solid #5473D6;
+  border: 0.2rem solid #5473D6;
 }
 .btn.btn__secondary:hover {
   color: white;
