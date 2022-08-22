@@ -1,5 +1,15 @@
 {
-  "dependencies": {
-    "concurrently": "^7.3.0"
+  "name": "Eleventy",
+  "version": "1.0.0",
+  "scripts": {
+    "watch:sass": "sass --watch src/assets/styles",
+    "build:sass": "sass src/assets/styles",
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
   }
 }

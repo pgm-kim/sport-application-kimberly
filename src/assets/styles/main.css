@@ -1,19 +1,247 @@
-/* Error: Undefined variable.
- *    ,
- * 32 |         background-color: $color-grey;
- *    |                           ^^^^^^^^^^^
- *    '
- *   src\assets\styles\components\_header.scss 32:27  @import
- *   src\assets\styles\components\_index.scss 6:9     @import
- *   src\assets\styles\main.scss 3:9                  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 32 \2502          background-color: $color-grey;\a    \2502                            ^^^^^^^^^^^\a    \2575 \a   src\\assets\\styles\\components\\_header.scss 32:27  @import\a   src\\assets\\styles\\components\\_index.scss 6:9     @import\a   src\\assets\\styles\\main.scss 3:9                  root stylesheet";
+/*
+This file is used to contain all abstracts imports.
+*/
+@font-face {
+  font-family: "Work Sans";
+  src: url("/dist/fonts/Work Sans Black.woff2") format("woff2"), url("/dist/fonts/Work Sans Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
 }
+@font-face {
+  font-family: "Work Sans";
+  src: url("/dist/fonts/Work Sans Bold.woff2") format("woff2"), url("/dist/fonts/Work Sans Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/dist/fonts/Work Sans SemiBold.woff2") format("woff2"), url("/dist/fonts/Work Sans SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/dist/fonts/Work Sans Medium.woff2") format("woff2"), url("/dist/fonts/Work Sans Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/dist/fonts/Work Sans Regular.woff2") format("woff2"), url("/dist/fonts/Work Sans Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/dist/fonts/Work Sans Light.woff2") format("woff2"), url("/dist/fonts/Work Sans Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+@font-face {
+  font-family: "bely-display";
+  src: url("/dist/fonts/bely.woff2") format("woff2"), url("/dist/fonts/bely.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/*
+This file is used to contain all base imports.
+*/ /*  
+    http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
+    License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "bely-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #1E6164;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+h2 {
+  font-family: "bely-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #5473D6;
+  margin-top: 2rem;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+}
+
+/*
+This file is used to contain all components imports.
+*/
+.header {
+  width: 80vw;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: black solid 1px;
+}
+.header.header__regular {
+  border-bottom: black solid 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+.header.header__filter {
+  border-bottom: white solid 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 80rem) {
+  .search-form {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .search__label:before {
+    content: none;
+  }
+}
+.navbar {
+  background-color: #5473D6;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.navbar .navbar--btn {
+  background-color: #C69C21;
+  border-radius: 2rem;
+  margin-top: -4rem;
+  padding: 1rem;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar ul li {
+  padding: 1rem 0.5rem;
+}
+.navbar ul a {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+@media only screen and (min-width: 80rem) {
+  .navbar ul {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+.btn {
+  text-align: center;
+  width: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+.btn.btn__primary {
+  color: white;
+  background-color: #C69C21;
+}
+.btn.btn__primary:hover {
+  opacity: 0.8;
+}
+.btn.btn__primaryblue {
+  color: white;
+  background-color: #5473D6;
+}
+.btn.btn__primaryblue:hover {
+  opacity: 0.8;
+}
+.btn.btn__secondary {
+  background-color: white;
+  color: #5473D6;
+  border: 0.5rem solid #5473D6;
+}
+.btn.btn__secondary:hover {
+  color: white;
+  background-color: #5473D6;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+}
+.information li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.login {
+  background-color: #AED2D3;
+}
+
+/*# sourceMappingURL=main.css.map */
