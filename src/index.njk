@@ -43,15 +43,7 @@ level: ['beginner', 'intermediate', 'advanced', 'extreme']
 <section>
 <h2>stappen</h2>
 <ul>
-    <li>
-        <div>
-            
-            <b>{% for item in nummer %}</b>
-        </div>
-        <div>
-            {% for item in stap %}
-        </div>
-    </li>
+    {% include "components/stap.njk" %}
 </ul>
 </section>
 
