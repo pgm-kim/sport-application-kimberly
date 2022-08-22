@@ -44,14 +44,22 @@ level: ['beginner', 'intermediate', 'advanced', 'extreme']
 
 {% endfor %}
 
-</div>
-</ul>
+<ul>
+        {%- for item in nummer -%}
+        {%- for item in stap -%}
+            <li>
+                <div><b>{{ nummer }}</b></div><div>{{ stap }}</div>
+            </li>
+        {%- endfor -%}
+        {%- endfor -%}
+    <ul>
+
 </section>
-<a href="./built/video/index.html">
+
 <button class="btn btn__primary">
         succeed
     </button>
-</a>
+
   {% endblock %}
 
 {% endblock %}

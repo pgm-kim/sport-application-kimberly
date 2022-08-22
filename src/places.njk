@@ -2,25 +2,21 @@
 title: places
 places: ['flat', 'ramp', 'slide', 'grab', 'grind']
 ---
-<body class="background--darkblue">
 
-{% block header %}
-
+{% block body %}
+    {% block header %}
         <section>
-            {% include "components/header--list.njk" %}
+            {% include "components/header--filter.njk" %}
         </section>
-        
-{% endblock %}
+    {% endblock %}
+    {% block main %}
 
-{% block main %}
-
-    <button class="btn btn__secondary">
+            <button class="btn btn__secondary">
 
         {% for item in places %}
         {{ item }}
-        
+        {% endfor %}
+
     </button>
-
+    {% endblock %}
 {% endblock %}
-
-</body>
