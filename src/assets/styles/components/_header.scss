@@ -7,19 +7,23 @@
     display: flex;
     justify-content: flex-start;
     border-bottom: black solid 1px;
+
+
+    &.header__regular { 
+        border-bottom: black solid 1px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    &.header__filter {
+        border-bottom: white solid 1px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-.header__regular { 
-    border-bottom: black solid 1px;
-    display: flex;
-    justify-content: flex-start;
-}
 
-.header__filter {
-    border-bottom: white solid 1px;
-    display: flex;
-    justify-content: space-between;
-}
 
 
 .form-fields {
