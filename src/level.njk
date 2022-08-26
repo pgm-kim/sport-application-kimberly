@@ -3,18 +3,29 @@ title: level
 level: ['beginner', 'intermediate', 'advanced', 'extreme']
 ---
 
+
 {% extends "layouts/default.njk" %}
 
 <body class="background--darkblue">
 {% block header %}
+{% block body %}
+    {% block header %}
         <section>
-            {% include "components/header--list.njk" %}
+            {% include "components/header--filter.njk" %}
         </section>
-{% endblock %}
+    {% endblock %}
+    {% block main %}
+
+            <button class="btn btn__secondary">
 
 {% block main %}
     <button class="btn btn__secondary">
     </button>
 {% endblock %}
+        {% for item in level %}
+        {{ item }}
+        {% endfor %}
 
-</body>
+    </button>
+    {% endblock %}
+{% endblock %}
