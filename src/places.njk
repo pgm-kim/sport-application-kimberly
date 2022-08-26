@@ -3,6 +3,7 @@ title: places
 places: ['flat', 'ramp', 'slide', 'grab', 'grind']
 ---
 <body class="background--darkblue">
+{% extends "layouts/default.njk" %}
 
 {% block header %}
 
@@ -15,7 +16,6 @@ places: ['flat', 'ramp', 'slide', 'grab', 'grind']
 {% block main %}
 
     <button class="btn btn__secondary">
-        {% for item in level %}
     </button>
 
 {% endblock %}

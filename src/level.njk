@@ -2,6 +2,9 @@
 title: level
 level: ['beginner', 'intermediate', 'advanced', 'extreme']
 ---
+
+{% extends "layouts/default.njk" %}
+
 <body class="background--darkblue">
 {% block header %}
         <section>
@@ -11,7 +14,6 @@ level: ['beginner', 'intermediate', 'advanced', 'extreme']
 
 {% block main %}
     <button class="btn btn__secondary">
-        {% for item in level %}
     </button>
 {% endblock %}
 
